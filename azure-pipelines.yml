@@ -4,6 +4,13 @@
 # https://aka.ms/yaml
 
 trigger:
+- task: JenkinsQueueJob@2
+  inputs:
+    serverEndpoint: 'Jenkins'
+    jobName: 'deployment&test'
+    captureConsole: true
+    capturePipeline: true
+    isParameterizedJob: false
 - main
 
 pool:
