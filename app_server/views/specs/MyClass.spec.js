@@ -5,7 +5,7 @@ var expect = chai.expect;
 
  describe("Test suit", function() {
     it("Test the add method", function() {
-    expect(MyObj.add(1,2)).to.be.equal(3);
+    expect(MyObj.add(2,2)).to.be.equal(3);
     });
 });
 
